@@ -34,8 +34,76 @@
 
         </StackPanel>
 
-        <StackPanel Grid.Column="0" Grid.Row="2">
+        <!-- Navigation -->
 
+        <StackPanel x:Name="NavigationStackPanel" 
+                    Grid.Column="0" 
+                    Grid.Row="2" 
+                    Width="200" 
+                    Margin="0,20,0,0">
+            
+            <ListView x:Name="NagivationListView" Foreground="Black" BorderThickness="0">
+                <ListViewItem x:Name="HomeListViewItem" Margin="0, 10">
+                    <StackPanel Orientation="Horizontal" 
+                                VerticalAlignment="Center" 
+                                Margin="10,0,0,0">
+                        <Image Source="Icons/home-solid.png" Width="18"/>
+                        <TextBlock Text="Home" 
+                                   FontSize="12" 
+                                   FontWeight="Bold"
+                                   Margin="20,0,0,0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="FlashcardsListViewItem" Margin="0, 10">
+                    <StackPanel Orientation="Horizontal" 
+                                VerticalAlignment="Center" 
+                                Margin="10,0,0,0">
+                        <Image Source="Icons/chalkboard-solid.png" Width="17"/>
+                        <TextBlock Text="Flashcards" 
+                                   FontSize="12" 
+                                   FontWeight="Bold"
+                                   Margin="20,0,0,0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="LearningListViewItem" Margin="0, 10">
+                    <StackPanel Orientation="Horizontal" 
+                                VerticalAlignment="Center" 
+                                Margin="10,0,0,0">
+                        <Image Source="Icons/brain-solid.png" Width="17"/>
+                        <TextBlock Text="Learning"
+                                   FontSize="12" 
+                                   FontWeight="Bold"
+                                   Margin="20,0,0,0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="TestsListViewItem" Margin="0, 10">
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Center" 
+                                Margin="10,0,0,0">
+                        <Image Source="Icons/spell-check-solid.png" Width="18"/>
+                        <TextBlock Text="Tests" 
+                                   FontSize="12" 
+                                   FontWeight="Bold"
+                                   Margin="20,0,0,0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="HowToUseListViewItem" Margin="0, 10">
+                    <StackPanel Orientation="Horizontal" 
+                                VerticalAlignment="Center" 
+                                Margin="10,0,0,0">
+                        <Image Source="Icons/question-circle-solid.png" Width="17"/>
+                        <TextBlock Text="How to use?" 
+                                   FontSize="12" 
+                                   FontWeight="Bold"
+                                   Margin="20,0,0,0"/>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+            
         </StackPanel>
 
         <StackPanel Grid.Column="1" 

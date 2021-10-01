@@ -7,7 +7,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Icons\brain-solid.png" />
+    <None Remove="Icons\chalkboard-solid.png" />
+    <None Remove="Icons\home-solid.png" />
+    <None Remove="Icons\question-circle-solid.png" />
+    <None Remove="Icons\spell-check-solid.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\brain-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\chalkboard-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\home-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\question-circle-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\spell-check-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
